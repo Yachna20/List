@@ -36,7 +36,20 @@ namespace LinkedList
                 temp = temp.Next;
             }
         }
+        public void Pop()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("Stack is empty deletion is not possible");
+            }
+            else
+            {
+                Console.WriteLine("Values popped is {0}", top.data);
+                top = top.Next;
+            }
+        }
     }
+    
 }
             
         
